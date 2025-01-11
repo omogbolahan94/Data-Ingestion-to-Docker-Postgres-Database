@@ -1,0 +1,20 @@
+services:
+  postgres-container-3:
+    image: postgres:13
+    environment: 
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=358
+      - POSTGRES_DB=ny_taxi
+    volumes:
+      - "./ny_taxi_postgres_data:/var/lib/postgresql/data:rw"  # where rw is read-write mode
+    ports:
+      - "5433:5432"
+
+  pgadmin-container:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=358
+    ports:
+      - "8081:80"
+

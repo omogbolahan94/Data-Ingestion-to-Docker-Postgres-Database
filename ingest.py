@@ -75,8 +75,8 @@ source_url = http://localhost:8000/ny_taxi_source_data/yellow_head_100.csv
 Check the IP address and the of the localhost in the url above with it
 This is because using localhost is the local host of the container itself so it will not know how to 
 find that of the computer
-> ipconfig: 172.28.112.1
-source_url = http://machine_ipaddress:8000/ny_taxi_source_data/yellow_head_100.csv
+> ipconfig
+source_url = http://machine_ipaddress:8000/ny_taxi_source_data/simple_data/yellow_head_100.csv
 
 destination_table_name = yellow_taxi_2015_01_head
 '''
